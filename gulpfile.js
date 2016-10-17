@@ -55,7 +55,7 @@ gulp.task('templates', function () {
 });
 
 gulp.task('fonts', function () {
-  gulp.src('./src/fonts/**/*')
+  gulp.src(['./src/fonts/**/*', './src/fonts/*'])
     .pipe(gulp.dest('./build/fonts'))
     .pipe(browserSync.reload({stream:true}));
 });

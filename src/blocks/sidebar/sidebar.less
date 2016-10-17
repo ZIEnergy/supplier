@@ -1,0 +1,30 @@
+.sidebar {
+  
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0e0500;
+    width: 300px;
+    padding: 50px 30px 30px;
+  }
+  
+  &__navigation {
+    margin-top: 48px;
+  }
+  
+  &__navigation-item {
+    
+    &:nth-child(n+2) {
+      margin-top: 10px;
+    }
+  }
+  
+  &__link {
+    color: #fff;
+    font-family: @font-main;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+}
