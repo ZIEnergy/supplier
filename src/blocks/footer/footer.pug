@@ -1,0 +1,8 @@
+mixin footer(additionalClass)
+  .footer(class=additionalClass)
+    .wrapper.footer__wrapper
+      a.logo(href="#") Снабженец
+      .footer__right
+        +contacts('contacts--white')
+        .developer.footer__developer Разработано в
+          a.developer__link(href="#") &nbsp;ARLIX
