@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    .page
+      +sidebar
+      +header('header--inner')
+      .content
+        .wrapper.content__wrapper
+          h2.header-common Контакты
+          .content__contacts
+            .content__contacts-item
+              .content__contacts-item-header Телефон:
+              .content__contacts-item-text +7 (915) 375-66-66
+            .content__contacts-item
+              .content__contacts-item-header Факс:
+              .content__contacts-item-text +7 (915) 375-66-66
+            .content__contacts-item.content__contacts-item--address
+              .content__contacts-item-header Адрес:
+              .content__contacts-item-text Телефон: Москва, Улица, дом, офис
+          .map
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Mr-aSqs19IYcnmxgl2mztLUwDtSB_GPP&amp;width=100%&amp;height=300&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    +footer
+    include ../templates/scripts.pug

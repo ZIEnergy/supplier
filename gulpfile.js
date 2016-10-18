@@ -86,7 +86,7 @@ gulp.task('server', function() {
         server: {
             baseDir: "build"
         },
-      reloadOnRestart: true
+//      reloadOnRestart: true
     });
 });
 
