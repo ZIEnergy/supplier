@@ -1,0 +1,9 @@
+mixin product-controls(price, additionalClass)
+  .product-controls(class=additionalClass)
+    .product-controls__price #{price} 
+      | руб.
+    form.quantity(action="#" method="get")
+      a.quantity__button.quantity__button--less(href="#") -
+      input.quantity__input(value="1" name="quantity")
+      a.quantity__button.quantity__button--more(href="#") +
+    a.button.product-controls__button(href="#") в корзину
