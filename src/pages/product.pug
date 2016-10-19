@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    .page
+      +sidebar
+      +header('header--inner')
+      .content
+        .wrapper.content__wrapper
+          +breadcrumbs
+          +product
+          +info
+          +popular
+    +footer
+    include ../templates/scripts.pug

@@ -1,0 +1,39 @@
+.tabs {
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  
+  &__item {
+    border: 2px solid #ccc;
+    border-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 3px 3px 0 0;
+    padding: 0 17px;
+    height: 28px;
+    line-height: 24px;
+    
+    &:nth-child(n+2) {
+      margin-left: 5px;
+    }
+    
+    &--active {
+      height: 40px;
+      line-height: 36px;
+      border-bottom: 2px solid #fff;
+      background: #fff;
+      margin-top: -12px;
+      position: relative;
+      bottom: -2px;
+    }
+  }
+  
+  &__item-link {
+    color: #2b2a29;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    font-family: @font-main;
+    text-decoration: none;
+  }
+}

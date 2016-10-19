@@ -1,0 +1,22 @@
+.breadcrumbs {
+  margin-bottom: 20px;
+  
+  &__item {
+    color: #000;
+    opacity: .3;
+    font-family: @font-main;
+    font-size: 20px;
+    margin: 25px 0 20px;
+    text-decoration: none;
+    font-weight: 300;
+    
+    &:nth-child(n+2) {
+      
+      &:before {
+        content: '|';
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+}
