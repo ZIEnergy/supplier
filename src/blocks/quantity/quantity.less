@@ -12,6 +12,11 @@
     text-align: center;
     display: block;
     text-decoration: none;
+    transition: @transition;
+    
+    &:hover {
+      background: rgba(0, 0, 0, .3);
+    }
     
     &--less {
       border-radius: 6px 0 0 6px;
@@ -34,5 +39,9 @@
     color: #2b2a29;
     font-weight: 300;
     line-height: 20px;
+    
+    &:focus {
+      outline: 0;
+    }
   }
 }
