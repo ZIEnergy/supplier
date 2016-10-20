@@ -1,2 +1,5 @@
-mixin quantity(additionalClass)
-  .quantity(class=additionalClass)
+mixin quantity(quantity, additionalClass)
+  form.quantity(action="#" method="get" class=additionalClass)
+    a.quantity__button.quantity__button--less(href="#") -
+    input.quantity__input(value=quantity name="quantity")
+    a.quantity__button.quantity__button--more(href="#") +

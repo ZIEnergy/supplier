@@ -1,0 +1,77 @@
+.cart-table {
+  width: 100%;
+  
+  &__row {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  }
+  
+  &__header {
+    color: rgba(0, 0, 0, .5);
+    font-family: @font-main;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    
+    &:last-child {
+      text-align: right;
+    }
+  }
+  
+  &__item {
+    
+  }
+  
+  &__item-picture {
+    padding: 22px 0;
+  }
+  
+  &__item-picture-content {
+    
+  }
+  
+  &__item-name {
+    color: @color-main;
+    font-family: @font-main;
+    font-size: 20px;
+    font-weight: 800;
+    max-width: 250px;
+    padding: 0 60px 0 20px;
+    vertical-align: middle;
+  }
+  
+  &__item-price {
+    color: #000;
+    font-family: @font-main;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    vertical-align: middle;
+    
+    &:last-child {
+      text-align: right;
+    }
+  }
+  
+  &__item-quantity {
+    vertical-align: middle;
+  }
+  
+  &__quantity {
+    justify-content: center;
+  }
+  
+  &__price-overall {
+    margin-top: 15px;
+    color: #000;
+    font-family: @font-main;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  &__price-overall-header {
+    font-weight: 800;
+    margin-right: 5px;
+  }
+}

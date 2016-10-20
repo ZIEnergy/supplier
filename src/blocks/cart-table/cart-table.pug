@@ -1,0 +1,27 @@
+mixin cart-table(additionalClass)
+  table.cart-table(class=additionalClass)
+    tr.cart-table__row
+      th.cart-table__header
+      th.cart-table__header
+      th.cart-table__header цена
+      th.cart-table__header количество
+      th.cart-table__header сумма
+    tr.cart-table__item.cart-table__row
+      td.cart-table__item-picture
+        img.cart-item__picture-content(src='img/cart-1.jpg', alt="Product", width="37", height="55")
+      td.cart-table__item-name Смесь сухая универсальная М-150
+      td.cart-table__item-price 125.00 руб.
+      td.cart-table__item-quantity
+        +quantity('1', 'cart-table__quantity')
+      td.cart-table__item-price 125.00 руб.
+    tr.cart-table__item.cart-table__row
+      td.cart-table__item-picture
+        img.cart-table__item-picture-content(src='img/cart-2.jpg', alt="Product", width="37", height="55")
+      td.cart-table__item-name Монтажная сухая смесь  М-200
+      td.cart-table__item-price 135.00 руб.
+      td.cart-table__item-quantity
+        +quantity('999', 'cart-table__quantity')
+      td.cart-table__item-price 134865.00 руб.
+  .cart-table__price-overall
+    .cart-table__price-overall-header Итого:
+    |134990.00 руб.

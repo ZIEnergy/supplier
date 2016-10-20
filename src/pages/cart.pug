@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    .page
+      +sidebar
+      +header('header--inner')
+      .content.cart
+        .wrapper.content__wrapper
+          h2.header-common Корзина
+          +cart-table
+          a.button.cart__button(href="#") оформить заказ
+    +footer
+    include ../templates/scripts.pug
