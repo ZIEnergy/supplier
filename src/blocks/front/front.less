@@ -18,15 +18,14 @@
   }
   
   &__wrapper {
-    padding: 212px 0 50px 350px;   
+    padding: 207px 0 50px 355px;   
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
   }
   
   &__top {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
   
   &__header {
@@ -34,10 +33,12 @@
     font-family: 'Snell Roundhand', 'Trebuchet MS', cursive;
     font-weight: 400;
     font-size: 100px;
+    line-height: 75px;
+    margin-top: 8px;
   }
   
   &__product {
-    
+    margin-right: 55px;
   }
   
   &__comment {
@@ -46,12 +47,14 @@
     font-weight: 300;
     color: #fff;
     width: 100%;
+    letter-spacing: .4px;
   }
   
   &__button {
-    margin-top: 40px;
+    margin-top: 43px;
     height: 50px;
     width: 250px;
     line-height: 42px;
+    align-self: flex-end;
   }
 }

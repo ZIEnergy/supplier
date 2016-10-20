@@ -4,4 +4,4 @@ mixin item(picture, header, dscr, price, additionalClass)
     .item__content
       a.item__header(href="#") #{header}
       p.item__dscr #{dscr}
-      +product-controls(price)
+      +product-controls(price, 'item__product-controls')

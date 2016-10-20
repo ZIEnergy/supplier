@@ -3,7 +3,11 @@
   width: 50%;
   
   &:nth-child(2n+1) {
-    padding-right: 40px;
+    padding-right: 24px;
+  }
+  
+  &:nth-child(n+2) {
+    margin-left: 40px;
   }
   
   &__content {
@@ -14,8 +18,11 @@
     color: #000;
     font-family: @font-main;
     font-size: 20px;
+    line-height: 24px;
     font-weight: 300;
-    padding-top: 3px;
+    display: block;
+    padding-top: 2px;
+    letter-spacing: .3px;
     cursor: pointer;
   }
   
