@@ -3,3 +3,11 @@
   display: table;
   clear: both;
 }
+
+.text-hover {
+  transition: @transition;
+  
+  &:hover {
+    color: darken(@color-main, 15%);
+  }
+}

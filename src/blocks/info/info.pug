@@ -1,16 +1,21 @@
 mixin info(additionalClass)
   .info(class=additionalClass)
     +tabs
-    table.info__table
-      tr.info__table-row
-        td.info__table-item Расход воды:
-        td.info__table-item Easy
-      tr.info__table-row
-        td.info__table-item Минимальная толщина слоя:
-        td.info__table-item 30371
-      tr.info__table-row
-        td.info__table-item Время использования  при периодическом размешивании:
-        td.info__table-item Встраиваемый 1&2&3 дорожки
-      tr.info__table-row
-        td.info__table-item Порт COM:
-        td.info__table-item 3
+    .info__item.info__item--active.info__item--about
+      .info__text
+        p.info__text-item Игла тонкая  используется в игловых пистолетах-маркираторах для крепления к одежде информационных ярлыков, бирок и т.п. из тонких тканей (шелк, нижнее белье)
+        p.info__text-item 5штук в упаковке, цена указана за 1 шт.
+    .info__item.info__item--characteristics
+      table.info__table
+        tr.info__table-row
+          td.info__table-item Расход воды:
+          td.info__table-item Easy
+        tr.info__table-row
+          td.info__table-item Минимальная толщина слоя:
+          td.info__table-item 30371
+        tr.info__table-row
+          td.info__table-item Время использования  при периодическом размешивании:
+          td.info__table-item Встраиваемый 1&2&3 дорожки
+        tr.info__table-row
+          td.info__table-item Порт COM:
+          td.info__table-item 3
