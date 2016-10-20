@@ -1,0 +1,30 @@
+.radiobutton-item {
+  display: flex;
+  width: 50%;
+  
+  &:nth-child(2n+1) {
+    padding-right: 40px;
+  }
+  
+  &__content {
+    margin-left: 15px;
+  }
+  
+  &__label {
+    color: #000;
+    font-family: @font-main;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 3px;
+    cursor: pointer;
+  }
+  
+  &__comment {
+    color: #aaa;
+    font-family: @font-main;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+}

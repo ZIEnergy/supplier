@@ -1,0 +1,21 @@
+.radiobutton {
+  flex: 0 0 auto;
+  
+  &__input {
+    display: none;
+    
+    &:checked + .radiobutton__fake {
+      background: @color-main;
+    }
+  }
+  
+  &__fake {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border: 5px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

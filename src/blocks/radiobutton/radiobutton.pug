@@ -1,0 +1,4 @@
+mixin radiobutton(id, name, isChecked, additionalClass)
+  .radiobutton(class=additionalClass)
+    input.radiobutton__input(type="radio" name=name id=id checked=isChecked)
+    label.radiobutton__fake(for=id)
