@@ -15,12 +15,64 @@
   &__content {
     width: 100%;
     padding-left: 350px;
+  
+    @media screen and (max-width: @screen-md) {
+      padding-left: 0;
+    }
+  }
+  
+  &__top-wrapper {
+  
+    @media screen and (max-width: @screen-md) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 18px;
+    }
+  }
+  
+  &__device {
+    display: none;
+    
+    @media screen and (max-width: @screen-md) {
+      display: block;
+    }
+  }
+  
+  &__sidebar-button {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: @font-main;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-decoration: none;
+    
+    &:after {
+      content: '';
+      display: block;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAXCAMAAABODP0nAAAApVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABU/knhAAAANnRSTlMAAgMECAkLDQ4SFRcYGRocIDY4QExcZXB1eoWGh5SVlpecnaGjqa2xs7a5u77Dx8jz9PX3+v2MwxMLAAAAxklEQVQoz43R2VICMRhE4YOKogi4o0OURdxBjct5/0fzBqpwJpOhr7/6qzsBrqY0ZHwNcKF3eTfSSzj/VCc5F1SH7L+o3ta7QjWeQO/1N3czqMYBQGuuOq7tt3bQ/dCaRf8cdGZfaVly0FmY6hnKDnqP39XtRdXB7kPlZkg56C9L20dpB3vTn81FtQ4OlxuvlHFwNI/rniHnoP28+vci76C/UL0ZNjnYuXeVvIPu+3YODmZRjcc0ZvCm8bTZ0Tp72soB7ZT7AzOxKxa2gNHTAAAAAElFTkSuQmCC');
+      background-size: cover;
+      width: 20px;
+      height: 12px;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+  }
+  
+  &__logo {
+    
   }
   
   &__top {
     display: flex;
     justify-content: space-between;
     padding-top: 26px;
+  
+    @media screen and (max-width: @screen-md) {
+      flex-flow: column nowrap;
+      padding-top: 0;
+    }
   }
   
   &__cart {
@@ -28,6 +80,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-top: 20px;
+    }
   }
   
   &__cart-content {

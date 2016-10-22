@@ -2,13 +2,17 @@ mixin header(additionalClass)
   .header(class=additionalClass)
     .wrapper.header__wrapper
       .header__content
-        .header__top
-          +contacts
-          .header__cart
-            .header__cart-content
-              |В корзине 
-              span.header__cart-items 5
-              |&nbsp;товаров: 
-              span.header__cart-price 136950.00р
-            a.button.header__button(href="#") оформить заказ
+        .header__top-wrapper
+          .header__device
+            a.logo(href="index.html").header__logo Снабженец
+            a.header__sidebar-button(href="#") Каталог
+          .header__top
+            +contacts
+            .header__cart
+              .header__cart-content
+                |В корзине 
+                span.header__cart-items 5
+                |&nbsp;товаров: 
+                span.header__cart-price 136950.00р
+              a.button.header__button(href="#") оформить заказ
         +menu('header__menu')

@@ -8,6 +8,21 @@
     width: 300px;
     padding: 63px 30px 30px;
     z-index: 3;
+  
+    @media screen and (max-width: @screen-lg) {
+      left: 50px;
+    }
+  
+    @media screen and (max-width: @screen-md) {
+//      display: none;
+    }
+  }
+  
+  &__logo {
+  
+    @media screen and (max-width: @screen-md) {
+      display: none;
+    }
   }
   
   &__navigation {
