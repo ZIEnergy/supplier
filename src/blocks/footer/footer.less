@@ -3,11 +3,21 @@
   height: 100px;
   padding: 9px 0 10px 0;
   margin-top: 45px;
+    
+  @media screen and (max-width: @screen-sm) {
+    height: auto;
+    padding: 20px 0;
+  }
   
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media screen and (max-width: @screen-sm) {
+      flex-direction: column;
+      
+    }
   }
   
   &__right {
@@ -19,5 +29,9 @@
   
   &__developer {
     margin-top: 2px;
+    
+    @media screen and (max-width: @screen-sm) {
+      margin-top: 10px;
+    }
   }
 }

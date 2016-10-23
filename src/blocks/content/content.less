@@ -1,6 +1,10 @@
 .content {
   padding: 38px 0 0;
   
+  @media screen and (max-width: @screen-xs) {
+    padding-top: 25px;
+  }
+  
   &__wrapper {
     padding-left: 350px;
   
@@ -10,6 +14,18 @@
   
     @media screen and (max-width: @screen-md) {
       padding-left: 50px;
+    }
+  
+    @media screen and (max-width: @screen-xs) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    &--catalog {
+  
+      @media screen and (max-width: @screen-xs) {
+        padding: 0;
+      }
     }
   }
   

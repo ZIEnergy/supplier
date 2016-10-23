@@ -14,7 +14,28 @@
     }
   
     @media screen and (max-width: @screen-md) {
-//      display: none;
+      display: none;
+      width: 100%;
+      background: rgba(159, 176, 56, .95);
+      top: 159px;
+      left: 0;
+      height: 350px;
+      padding: 0;
+    }
+  }
+  
+  &__close {
+    display: none;
+  
+    @media screen and (max-width: @screen-md) {
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      background: url(../img/close-white.png) no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
     }
   }
   
@@ -27,6 +48,16 @@
   
   &__navigation {
     margin-top: 45px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-top: 0;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    
   }
   
   &__navigation-item {

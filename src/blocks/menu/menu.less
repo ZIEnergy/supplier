@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
   
+  @media screen and (max-width: @screen-sm) {
+    display: none;
+  }
+  
   &__item {
     display: flex;
     padding-top: 13px;
