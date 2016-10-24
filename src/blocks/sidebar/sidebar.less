@@ -4,20 +4,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #0e0500;
+    background: @color-main;
     width: 300px;
-    padding: 63px 30px 30px;
+    padding: 31px 30px 20px;
     z-index: 3;
-  
-    @media screen and (max-width: @screen-lg) {
-      left: 50px;
-    }
   
     @media screen and (max-width: @screen-md) {
       display: none;
       width: 100%;
-      background: rgba(159, 176, 56, .95);
-      top: 159px;
+      background: rgba(45, 147, 108, .95);
+      top: 150px;
       left: 0;
       height: 350px;
       padding: 0;
@@ -47,7 +43,9 @@
   }
   
   &__navigation {
-    margin-top: 45px;
+    margin-top: 33px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 15px;
   
     @media screen and (max-width: @screen-md) {
       margin-top: 0;
@@ -55,15 +53,35 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      padding: 30px;
+      padding: 28px 50px 15px;
     }
     
   }
   
   &__navigation-item {
+    margin-bottom: 10px;
     
-    &:nth-child(n+2) {
-      margin-top: 10px;
+    &--active {
+      position: relative;
+      
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgba(255, 255, 255, .2);
+        height: 30px;
+        border-radius: 2px;
+        margin-top: -4px;
+        margin-left: -16px;
+        width: 270px;
+      }
+    }
+  
+    @media screen and (max-width: @screen-md) {
+    
+      &:nth-child(n+11) {
+        margin-left: 80px;
+      }
     }
   }
   
@@ -75,7 +93,7 @@
     transition: @transition;
     
     &:hover {
-      color: @color-main;
+      color: rgba(255, 255, 255, .6);
     }
   }
 }
