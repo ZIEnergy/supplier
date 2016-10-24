@@ -11,15 +11,21 @@
   @media screen and (max-width: @screen-sm) {
     flex-direction: column;
     border-top: 0;
-    padding: 40px 20px 20px;
+    padding: 40px 0 20px;
   
     &:nth-child(2n) {
       background: rgba(0, 0, 0, .05);
     }
   }
+    
+  @media screen and (max-width: @screen-sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   
   &__picture {
     margin-top: 20px;
+    flex: 0 0 auto;
     
     @media screen and (max-width: @screen-sm) {
       margin-top: 0;
@@ -73,12 +79,23 @@
   &__product-controls {
     margin-top: 15px;
     
-    @media screen and (max-width: @screen-sm) {
+    @media screen and (max-width: @screen-xs) {
       flex-flow: row wrap;
       justify-content: center;
     
       .product-controls__button {
         margin-top: 20px;
+      }
+    }
+    
+    .product-controls__price {
+      margin-right: 40px;
+    }
+    
+    @media screen and (max-width: (@screen-xs - 20)) {
+    
+      .product-controls__price {
+        margin-right: 30px;
       }
     }
   }

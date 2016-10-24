@@ -4,17 +4,17 @@ mixin customer(additionalClass)
     .customer__content
       .form-item
         .form-item__header Ф.И.О.*
-        input.input(type="text" name="name")
+        input.input.customer__input(type="text" name="name")
       .form-item
         .form-item__header Телефон*
-        input.input(type="text" name="phone")
+        input.input.customer__input(type="text" name="phone")
       .form-item
         .form-item__header E-mail*
-        input.input(type="email" name="email")
+        input.input.customer__input(type="email" name="email")
       .form-item
         .form-item__header Адрес доставки
-        input.input(type="text" name="address")
+        input.input.customer__input(type="text" name="address")
       .form-item
         .form-item__header Комментарий к заказу*
-        textarea.input.input--textarea(name="comment")
+        textarea.input.customer__input.input--textarea(name="comment")
       

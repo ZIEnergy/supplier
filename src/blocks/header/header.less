@@ -43,7 +43,7 @@
     @media screen and (max-width: @screen-md) {
       display: flex;
       justify-content: space-between;
-      padding-top: 18px;
+      padding-top: 28px;
     }
   
     @media screen and (max-width: @screen-sm) {
@@ -157,7 +157,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 12px 0 0;
     background: @color-main;
     display: none;
   
@@ -167,11 +167,12 @@
   }
   
   &__mobile-button {
-    background: url(../img/icon-menu.png) no-repeat;
-    background-size: cover;
-    width: 20px;
-    height: 16px;
+    background: url(../img/icon-menu.png) no-repeat center;
+    background-size: 20px 16px;
     display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
   }
   
   &__mobile-cart {
@@ -233,6 +234,7 @@
     font-family: @font-main;
     font-size: 20px;
     line-height: 30px;
+    font-weight: 700;
   }
 
   &__mobile-menu-content {
