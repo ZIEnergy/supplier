@@ -7,3 +7,5 @@ $('.sidebar__close').click(function(e) {
   e.preventDefault();
   $('.sidebar__content').slideToggle('fast');
 });
+
+$(".sidebar").sticky({topSpacing:0});

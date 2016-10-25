@@ -1,4 +1,6 @@
 .sidebar {
+  z-index: 9999!important;
+  position: relative;
   
   &__content {
     position: absolute;
@@ -7,7 +9,6 @@
     background: @color-main;
     width: 300px;
     padding: 31px 30px 20px;
-    z-index: 3;
   
     @media screen and (max-width: @screen-md) {
       display: none;
