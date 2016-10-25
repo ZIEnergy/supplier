@@ -9,6 +9,6 @@ $('.sidebar__close').click(function(e) {
 });
 
 
-if ($(window).width() > 1024) {
+if ($(window).width() > 1024 && $(window).height() > 800) {
   $(".sidebar").sticky({topSpacing:0});
 };

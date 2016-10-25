@@ -13,8 +13,9 @@
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 3px 3px 0 0;
     padding: 0 16px;
-    height: 28px;
+    height: 29px;
     line-height: 24px;
+    transition: @transition;
     
     @media screen and (max-width: @screen-sm) {
       height: 40px;
@@ -39,13 +40,13 @@
     }
     
     &--active {
-      height: 40px;
+      height: 41px;
       line-height: 36px;
       border-bottom: 2px solid #fff;
       background: #fff;
-      margin-top: -12px;
+      margin-top: -13px;
       position: relative;
-      bottom: -2px;
+      bottom: -3px;
       
       &:hover {
         background: #fff;
