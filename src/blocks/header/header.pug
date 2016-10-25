@@ -58,7 +58,7 @@ mixin header(additionalClass)
               a.header__mobile-menu-link(href="#") Известь
             li.header__mobile-menu-item
               a.header__mobile-menu-link(href="#") Щебень
-      a.header__mobile-cart(href="#")
+      a.header__mobile-cart.fancybox(href="#call")
         .header__mobile-cart-items 5 товаров
         .header__mobile-cart-icon
     .wrapper.header__wrapper
@@ -75,5 +75,5 @@ mixin header(additionalClass)
                 span.header__cart-items 5
                 |&nbsp;товаров: 
                 span.header__cart-price 136950.00р
-              a.button.header__button(href="#") оформить заказ
+              a.button.header__button.fancybox(href="#call") оформить заказ
         +menu('header__menu')
