@@ -1,2 +1,7 @@
 mixin modal-cart(additionalClass)
-  .modal-cart#cart(class=additionalClass)
+  .modal-cart.modal#cart(class=additionalClass)
+    .modal-cart__container
+      .modal-cart__header Товар добавлен в корзину!
+      img.modal-cart__picture(src="img/item-1.png" alt="Product")
+      a.modal-cart__dscr(href="#") Смесь сухая универсальная М-150
+      a.button.modal-cart__button(href="cart.html") перейти в корзину

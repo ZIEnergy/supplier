@@ -1,7 +1,7 @@
 mixin modal-call(additionalClass)
   form.modal-call.modal#call(class=additionalClass, action="#", method="post")
     .modal-call__header Обратный звонок
-    input.input(type="text" name="name" placeholder="Ваше имя")
-    input.input(type="text" name="phone" placeholder="Телефон")
-    textarea.input(type="text" name="comment" placeholder="Комментарий")
-    button.button Отправить
+    input.input.modal__input(type="text" name="name" placeholder="Ваше имя")
+    input.input.modal__input(type="text" name="phone" placeholder="Телефон")
+    textarea.input.input--textarea.modal__textarea(type="text" name="comment" placeholder="Комментарий")
+    button.button.modal__button Отправить

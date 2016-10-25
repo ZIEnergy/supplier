@@ -1,2 +1,27 @@
 /* Fancybox */
 
+.fancybox-skin {
+  padding: 0!important;
+  background: transparent!important;
+  box-shadow: none!important;
+}
+
+.fancybox-inner {
+  overflow: hidden!important;
+}
+
+.fancybox-overlay {
+  background: rgba(0, 0, 0, .9);
+}
+
+.fancybox-close {
+  background: url(../img/close.png) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  right: -30px;
+    
+  @media screen and (max-width: @screen-sm) {
+    right: 0;
+  }
+}
