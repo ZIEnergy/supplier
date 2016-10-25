@@ -6,6 +6,10 @@
   
   &:first-child {
     border-top: 1px solid rgba(0, 0, 0, .1);
+  
+    @media screen and (max-width: @screen-sm) {
+      border-top: 0;
+    }
   }
   
   @media screen and (max-width: @screen-sm) {
@@ -52,7 +56,7 @@
     .text-hover;
     
     @media screen and (max-width: @screen-sm) {
-      margin-top: 29px;
+      margin-top: 27px;
     }
   }
   
