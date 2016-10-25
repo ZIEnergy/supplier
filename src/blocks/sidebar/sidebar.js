@@ -8,4 +8,7 @@ $('.sidebar__close').click(function(e) {
   $('.sidebar__content').slideToggle('fast');
 });
 
-$(".sidebar").sticky({topSpacing:0});
+
+if ($(window).width() > 1024) {
+  $(".sidebar").sticky({topSpacing:0});
+};
