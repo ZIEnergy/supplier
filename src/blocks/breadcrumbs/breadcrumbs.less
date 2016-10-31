@@ -1,21 +1,7 @@
 .breadcrumbs {
-  margin-bottom: 17px;
+  display: flex;
   
   &__item {
-    color: #000;
-    opacity: .3;
-    font-family: @font-main;
-    font-size: 17px;
-    text-decoration: none;
-    transition: @transition;
-    
-    &:hover {
-      opacity: 1;
-      
-      &:before {
-        opacity: .3;
-      }
-    }
     
     &:nth-child(n+2) {
       
@@ -23,7 +9,22 @@
         content: '|';
         display: inline-block;
         margin: 0 4px;
+        opacity: .3;
       }
+    }
+  }
+  
+  &__item-link {
+    color: #000;
+    opacity: .3;
+    font-family: @font-main;
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration: none;
+    transition: @transition;
+    
+    &:hover {
+      opacity: 1;
     }
   }
 }
