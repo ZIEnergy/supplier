@@ -214,8 +214,8 @@
     position: absolute;
     width: 100%;
     min-height: 100%;
-    height: auto;
     overflow: auto;
+    height: auto;
     top: 0;
     left: 0;
     z-index: 5;
@@ -231,8 +231,13 @@
       flex-direction: column;
     }
   }
+  
+  &__mobile-menu-container {
+    position: static;
+    overflow: auto!important;
+  }
     
-  &__mobile-menu-item {
+  &__mobile-menu-list-item {
 
     &--navigation {
 

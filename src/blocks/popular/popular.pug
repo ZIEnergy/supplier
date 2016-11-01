@@ -4,14 +4,16 @@ mixin popular(additionalClass)
       .popular__header-content Популярное
     .popular__list
       .popular__item
-        img.popular__picture(src="img/popular-1.jpg" alt="Product" width="75" height="110")
+        a.popular__item-link(href="#")
+          img.popular__picture(src="img/popular-1.jpg" alt="Product" width="75" height="110")
         .popular__item-content
           a.popular__item-header(href="#") Смесь сухая универсальная М-150
           .popular__item-bottom
             .popular__item-price 125.00
             a.button.popular__button.fancybox(href="#cart") в корзину
       .popular__item
-        img.popular__picture(src="img/popular-2.jpg" alt="Product" width="75" height="110")
+        a.popular__item-link(href="#")
+          img.popular__picture(src="img/popular-2.jpg" alt="Product" width="75" height="110")
         .popular__item-content
           a.popular__item-header(href="#") Монтажная сухая смесь  М-200
           .popular__item-bottom

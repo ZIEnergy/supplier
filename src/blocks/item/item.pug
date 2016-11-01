@@ -1,6 +1,7 @@
 mixin item(picture, header, dscr, price, additionalClass)
   .item(class=additionalClass)
-    img.item__picture(src="img/"+picture, alt="product", width="100", height="147")
+    a.item__link(href="#")
+      img.item__picture(src="img/"+picture, alt="product", width="100", height="147")
     .item__content
       a.item__header(href="#") #{header}
       p.item__dscr #{dscr}

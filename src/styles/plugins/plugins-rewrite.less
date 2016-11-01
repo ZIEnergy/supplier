@@ -8,6 +8,10 @@
 
 .fancybox-inner {
   overflow: hidden!important;
+    
+  @media screen and (max-width: @screen-sm) {
+    overflow: auto!important;
+  }
 }
 
 .fancybox-overlay {
@@ -23,5 +27,25 @@
     
   @media screen and (max-width: @screen-sm) {
     right: 0;
+  }
+}
+
+.fancybox-margin {
+  
+  .header__wrapper {
+    position: relative;
+    left: -8.5px;
+  }
+    
+  @media screen and (max-width: @screen-sm) {
+  
+    .header__wrapper {
+      left: 0;
+    }
+    
+    body {
+      position: fixed;
+      overflow: hidden;
+    }
   }
 }
